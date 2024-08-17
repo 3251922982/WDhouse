@@ -3,20 +3,58 @@ import java.util.Scanner;
 public class test1 {
 
 
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        int n = scanner.nextInt();
-        //0000 0010
-        for (int i = 31; i >= 1 ; i-=2) {
-            System.out.print(((n>>>i) & 1) + " " );
-        }
-        System.out.println();
-        for (int i = 30; i >= 0 ; i-=2) {
-            System.out.print(((n>>>i) & 1) + " " );
+    public static int add(int a,int b) {
+    int ret=a+b;
+    return ret;
+    }
+
+    public static boolean isLeapYear(int year) {
+        if (year % 100 == 0) {
+            if (year % 400 == 0) {
+                return true;
+            } else {
+                return false;
+            }
+        } else {
+            if (year % 4 == 0) {
+                return true;
+            } else {
+                return false;
+            }
         }
     }
 
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        while (sc.hasNextInt()) {
+            int year = sc.nextInt();
+            if (isLeapYear(year) == true) {
+                System.out.println("是闰年");
+            } else {
+                System.out.println("不是闰年");
+            }
+        }
+    }
 }
+
+
+
+
+//    public static void main(String[] args) {
+//        Scanner scanner = new Scanner(System.in);
+//        int n = scanner.nextInt();
+//        //0000 0010
+//        for (int i = 31; i >= 1 ; i-=2) {
+//            System.out.print(((n>>>i) & 1) + " " );
+//        }
+//        System.out.println();
+//        for (int i = 30; i >= 0 ; i-=2) {
+//            System.out.print(((n>>>i) & 1) + " " );
+//        }
+//    }
+//
+//}
 //    public static void main(String[] args) {
 //        Scanner in=new Scanner(System.in);
 //        while(in.hasNextInt()) {//循环输入
