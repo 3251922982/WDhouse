@@ -128,6 +128,62 @@ public class text1 {
         return ret;
     }
 
+    //我的数组转字符串
+    public  static  String myToString(int[] array){
+        String str="[";
+        for(int i=0;i<array.length;i++){
+            if(i!=(array.length)-1){
+                str=str+array[i]+',';
+            }
+            else{
+                str=str+array[i]+"]";
+            }
+        }
+        return str;
+    }
+
+    //数组copy
+    public static int[] copy1(int[] array){
+        int[] copy=new int[array.length];
+        for(int i=0;i< array.length;i++){
+            copy[i]=array[i];
+        }
+        return copy;
+    }
+
+    //二分查找
+    public  static  int mybinarysearch(int[] arr,int key){
+        int left=0;
+        int right=arr.length-1;
+        int mid;
+        while(left<right){
+            mid=(left+right)/2;
+            if(key<arr[mid]){
+                right=mid-1;
+            }
+            else if(key>arr[mid]){
+                left=mid+1;
+            }
+            else {
+                return mid;
+            }
+        }
+        return -1;
+    }
+
+    //冒泡排序
+    public static void bubleSort(int[] array){
+        for(int i=1;i<array.length;i++){
+            for(int j=0;j<array.length-i;j++){
+                if(array[j+1]>array[j]){
+                    int tmp=array[j+1];
+                    array[j+1]=array[j];
+                    array[j]=tmp;
+                }
+            }
+        }
+    }
+
 
     public static void main(String[] args) {
 //        int a=1,b=2,c=4;
@@ -144,13 +200,13 @@ public class text1 {
 //        System.out.println(facSum(1));
 //        hnt(3,'a','b','c');
 
-        int[] arr={1,2,3,4,5,6,7,8,0};//int[]相当于是数据类型
+        int[] arr={1,2,3,4,5,6,10,8,9,7};//int[]相当于是数据类型
         int[]  arr2=new int[]{1,2,3,4,5};//静态初始化
         int[] arr3=new int[10];//动态初始化，默认初始化全为0；
 
         //非简写形式可分两步进行
         int[] arr4;
-        arr4=new int[]{1,2,3,4};
+        arr4=new int[]{1,8,7,9,5,4,3,2,1};
 
         int[] arr5;
         arr5=new int[10];
@@ -158,28 +214,61 @@ public class text1 {
         boolean[] bool;
         bool=new boolean[10];
 
-        System.out.println(arr[1]);
-        System.out.println(arr.length);
-        //通过下标打印
-        for(int i=0;i<arr.length;i++) {
-            System.out.print(arr[i] + " ");
-        }
-        System.out.println();
-        //for each遍历
-        for(int x:arr){
-            System.out.print(x+" ");
-        }
-        System.out.println();
-        //调用库方法Arrays中的数组打印方法
-        String ret= Arrays.toString(bool);
-        System.out.println(ret);
-        System.out.println(arr);
-        int[] arr7=null;
-        System.out.println(arr7);
-        arrPrint(arr);
-        String ret1=Arrays.toString(arr);
-        System.out.println(ret1);
+//        System.out.println(arr[1]);
+//        System.out.println(arr.length);
+//        //通过下标打印
+//        for(int i=0;i<arr.length;i++) {
+//            System.out.print(arr[i] + " ");
+//        }
+//        System.out.println();
+//        //for each遍历
+//        for(int x:arr){
+//            System.out.print(x+" ");
+//        }
+//        System.out.println();
 
+        //调用库方法Arrays中的数组打印方法
+//        String ret= Arrays.toString(bool);
+//        System.out.println(ret);
+//        System.out.println(arr);
+//        int[] arr7=null;
+//        System.out.println(arr7);
+//        arrPrint(arr);
+//        String ret1=Arrays.toString(arr);
+//        System.out.println(ret1);
+//
+
+        System.out.println(myToString(arr2));
+        int[] copy=copy1(arr);
+        System.out.println(myToString(copy));
+
+        //Arrays提供了系列copy方法
+        int[] copy2=Arrays.copyOf(arr,2*arr.length);//可扩容
+        int[] copy3=Arrays.copyOfRange(arr,0,arr.length);//左闭又开
+        int[] copy4=new int[arr.length];
+        System.arraycopy(arr,0,copy4,0,arr.length);
+        System.out.println(myToString(copy2));
+        System.out.println(myToString(copy3));
+        System.out.println(myToString(copy4));
+        for(int x:arr){
+            System.out.println(x);
+        }
+        System.out.println("5出现在"+"arr"+"下标为"+mybinarysearch(arr,5)+"的位置");
+        //排序
+        Arrays.sort(arr);
+        System.out.println("7出现在"+"arr"+"下标为"+Arrays.binarySearch(arr,7)+"的位置");
+        //数组比较
+        System.out.println(Arrays.equals(arr,arr2));
+        //数组填充不指定就全部填充
+        Arrays.fill(arr2,1,3,2);
+        System.out.println(Arrays.toString(arr2));
+        bubleSort(arr4);
+        System.out.println(Arrays.toString(arr4));
+
+
+        //二维数组
+        int[][] ar=new int[][]{{1,2,3,4},{5,6,7,8}};
+        System.out.println(ar[0][2]);
     }
 
 
