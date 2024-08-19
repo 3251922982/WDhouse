@@ -183,7 +183,100 @@ public class text1 {
             }
         }
     }
+/////////////
+//两倍
+    public static int[] func2(int[] array) {
+        int[] tmp=new int[array.length];
+        for(int i=0;i<array.length;i++){
+            tmp[i]=2*array[i];
+        }
+        return tmp;
+    }
 
+//奇偶分离
+    public static int[] func3(int[] array) {
+        int left=0;
+        int right=array.length-1;
+        while (left<right){
+            while(left<right && array[left]%2!=0){
+                left++;
+            }
+            while(left<right && array[right]%2==0){
+                right--;
+            }
+        swap(array,left,right);
+        }
+        return array;
+    }
+//交换
+    public static void swap(int[] array,int i,int j) {
+        int tmp=array[i];
+        array[i]=array[j];
+        array[j]=tmp;
+    }
+
+    //找元素
+    public static int[] func4(int[] array,int target) {
+        int[] tmp={-1,-1};
+        for(int i=0;i<array.length-1;i++){
+            for(int j=i+1;j<array.length;j++){
+                if(array[i]+array[j]==target){
+                    tmp[0]=i;
+                    tmp[1]=j;
+                    return tmp;
+                }
+            }
+        }
+        return tmp;
+    }
+
+//找出出现次数最少的元素
+    public static int func6(int[] arr2) {
+        int ret=0;
+    for(int i=0;i<arr2.length;i++){
+        ret^=arr2[i];
+    }
+    return ret;
+}
+
+//多数元素问题
+    public static int func7(int[] arr3) {
+    Arrays.sort(arr3);
+    return arr3[arr3.length/2];
+}
+
+
+//连续奇数
+public static boolean func8(int... arr4) {
+    int count=0;
+    for(int i=0;i<arr4.length;i++){
+        if(arr4[i]%2!=0){
+            count++;
+            if(count==3){
+                return true;
+            }
+        }
+        else{
+            count=0;
+        }
+    }
+    return false;
+}
+
+
+//    public static void main(String[] args) {
+//        int[] arr=new int[]{1,2,3,4,5,6,7};
+//        int[] arr2=new int[]{1,2,3,4,3,2,1};
+//        int[] arr3={1,1,1,2,2,2,2,2,22,3,3,3};
+//        int[] arr4={2,2,2,2,2,1,2,3,5,7};
+//        int[] ret=new int[arr.length];
+//        //System.out.println(Arrays.toString(func3(arr)));
+//        System.out.println(Arrays.toString(func4(arr,10)));
+//        System.out.println(func6(arr2));
+//        System.out.println(func7(arr3));
+//        System.out.println(func8(arr4));
+//
+//    }
 
     public static void main(String[] args) {
 //        int a=1,b=2,c=4;
@@ -268,7 +361,11 @@ public class text1 {
 
         //二维数组
         int[][] ar=new int[][]{{1,2,3,4},{5,6,7,8}};
-        System.out.println(ar[0][2]);
+        int[][]  ar2=new int[2][];//不定列，但定行
+        ar2[0]=new int[]{1,2};
+        ar2[1]=new int[]{1,2,3,4,5,6};
+        //System.out.println(ar[0][2]);
+        System.out.println(ar2[1]);
     }
 
 

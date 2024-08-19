@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bcb15056-249b-47ca-90a6-f2e52670c1e8" name="变更" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/j040817/text1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/j040817/text1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/text1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/text1.java" afterDir="false" />
     </list>
