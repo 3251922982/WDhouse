@@ -1,6 +1,6 @@
 
 public class Date {
-    public String year;
+    private String year;//private表示私有的，year只能在当前类中使用
     public String moth;
     public String day = "6666";
     public boolean det;
@@ -27,4 +27,11 @@ public class Date {
         this("6", "6", "6");//必须是第一行，相当调用构造方法
     }
 
+    public String getYear() {
+        return year;
+    }
+
+    public void setYear(String year) {
+        this.year = year;
+    }
 }
