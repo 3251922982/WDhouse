@@ -21,19 +21,21 @@ public class Dog extends Animal {
 //        super();//super必须在第一行，对父类成员进行初始化
 //    }
 
-    public void Eat(){
+    public void Eat() {
         System.out.println(super.name+"在吃饭");
     }
 
     public void Eat2(){
+
         System.out.println(name+"在吃饭");
     }
 
     public  void func1(){
+
         System .out.println("子类方法");
     }
     public void method(){
-        //super.func1();
+        super.func1();
     }
 }
 

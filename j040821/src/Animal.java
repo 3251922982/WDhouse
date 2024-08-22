@@ -19,6 +19,7 @@ public class Animal {
         System.out.println("Animal.{}");
     }
 
+
     public  void func1(){
         System .out.println("父类方法");
     }
