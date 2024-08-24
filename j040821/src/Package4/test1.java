@@ -16,7 +16,7 @@ public class test1 {
         //animal.play();
         Animal animal2=new Bird("小飞",22,"不知道啥颜色");
         Animal animal3=new Animal("小黄",22,"不知道啥颜色");
-        //animal.Eat();
+        animal3.Eat();
         //animal2.Eat();
         //向下转型
 //        if(animal instanceof  Dog){
