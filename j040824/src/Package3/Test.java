@@ -7,5 +7,6 @@ public class Test {
         computer.usb(new Mouse());
         computer.usb(new KeyBoard());
         computer.close();
+        computer.Roll1();
     }
 }

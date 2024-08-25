@@ -1,6 +1,8 @@
 package Package3;
 
 public class Mouse implements IUSB{
+
+
     public  void hibernate1(){
         System.out.println("鼠标休眠1");
     }
