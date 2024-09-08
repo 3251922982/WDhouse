@@ -1,6 +1,5 @@
 package User;
 import Operate.*;
-
 import java.util.Scanner;
 
 public class librarian extends user {
@@ -11,7 +10,7 @@ public class librarian extends user {
                 new addOperation(),
                 new deleteOperation(),
                 new displayOperation(),
-                new returnOperation(),
+                new exitOperation(),
         };
     }
 

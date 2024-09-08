@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="bac84d70-7a52-4d2a-8291-268a66109b35" name="变更" comment="">
+      <change beforePath="$PROJECT_DIR$/out/production/图书管理系统/Book/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/图书管理系统/Book/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/图书管理系统/Book/book.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/图书管理系统/Book/book.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/图书管理系统/Book/bookList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/图书管理系统/Book/bookList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/图书管理系统/Operate/addOperation.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/图书管理系统/Operate/addOperation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/图书管理系统/Operate/seekOperation.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/图书管理系统/Operate/seekOperation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/图书管理系统/User/ordinaryUsers.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/图书管理系统/User/ordinaryUsers.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Book/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Book/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Book/book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Book/book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Book/bookList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Book/bookList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Operate/addOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Operate/addOperation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Operate/borrowingOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Operate/borrowingOperation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Operate/deleteOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Operate/deleteOperation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Operate/displayOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Operate/displayOperation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Operate/exitOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Operate/exitOperation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Operate/returnOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Operate/returnOperation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Operate/seekOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Operate/seekOperation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/User/librarian.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/User/librarian.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/User/ordinaryUsers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/User/ordinaryUsers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/User/user.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/User/user.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2lgYmZuce155gLpzRRxH139TAju" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RunManager" selected="应用程序.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Book.Main" />
+      <module name="图书管理系统" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Book.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Test1" />
+      <module name="图书管理系统" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="应用程序.Main" />
+        <item itemvalue="应用程序.Test1" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="bac84d70-7a52-4d2a-8291-268a66109b35" name="变更" comment="" />
+      <created>1725603349589</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1725603349589</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

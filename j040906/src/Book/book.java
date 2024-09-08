@@ -53,4 +53,16 @@ public class book {
     public void setType(String type) {
         this.type = type;
     }
+
+    @Override
+    public String toString() {
+        if(!bookName.equals("暂空")){
+        return "书名："+"《"+bookName+"》"+"  作者："+author
+                +" 价格："+price+" 类型："+type+((state==true)?" 已借出 ":" 未借出 ");
+        }
+        else{
+            return "书名："+bookName+"  作者："+author
+                    +" 价格："+price+" 类型："+type+((state==true)?" 已借出 ":" 未借出 ");
+        }
+    }
 }

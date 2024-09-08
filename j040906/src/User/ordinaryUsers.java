@@ -12,6 +12,7 @@ public class ordinaryUsers extends user {
                 new borrowingOperation(),
                 new displayOperation(),
                 new returnOperation(),
+                new exitOperation(),
         };
     }
 
@@ -22,11 +23,8 @@ public class ordinaryUsers extends user {
         System.out.println("         0. 查找图书         ");
         System.out.println("         1. 借阅图书         ");
         System.out.println("         2. 显示图书         ");
-        System.out.println("         3. 退出系统         ");
-
-
-
-
+        System.out.println("         3. 归还图书         ");
+        System.out.println("         4. 退出系统         ");
         System.out.println("--------------------------------");
         Scanner scanner=new Scanner(System.in);
         System.out.println("请选择你的操作-->");

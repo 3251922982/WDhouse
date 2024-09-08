@@ -1,8 +1,8 @@
 package Book;
 
 public class bookList {
-    public  book[] books=new book[10];
-    public  int useSize;
+    private   book[] books=new book[10];
+    private    int useSize;
     public bookList() {
         books[0]=new book("三国演义","罗贯中",20,"古典小说");
         books[1]=new book("三体","刘慈欣",25,"科幻小说");
@@ -20,8 +20,12 @@ public class bookList {
         }
     }
 
-    public  void setBooks(int pos,book book){
-        books[pos]=book;
+    public void setBooks(int Ser, book[] books,book book) {
+        this.books[Ser] = book;
+    }
+
+    public book[] getBooks() {
+        return books;
     }
 
     public int getUseSize() {
