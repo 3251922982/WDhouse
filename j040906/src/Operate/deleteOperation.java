@@ -23,6 +23,5 @@ public class deleteOperation implements bookOperation {
         }
         System.out.println("这本书不存在，不可删除");
         System.out.println();
-
     }
 }

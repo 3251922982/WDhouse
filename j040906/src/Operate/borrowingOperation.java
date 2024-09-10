@@ -11,11 +11,18 @@ public class borrowingOperation implements bookOperation{
         String BookName=scanner.nextLine();
         for(int i=0;i< bookList.getUseSize();i++){
             if(bookList.getBook(i).bookName.equals(BookName)){
-                System.out.println("成功借到到名为"+BookName+"的书");
-                bookList.getBook(i).state=true;
-                System.out.println(bookList.getBook(i));
-                System.out.println();
-                return;
+                if(bookList.getBook(i).state==false) {
+                    System.out.println("成功借到到名为" + BookName + "的书");
+                    bookList.getBook(i).state = true;
+                    System.out.println(bookList.getBook(i));
+                    System.out.println();
+                    return;
+                }
+                else{
+                    System.out.println("这本书已经被借走了");
+                    System.out.println();
+                    return;
+                }
             }
         }
         System.out.println("查无此书");

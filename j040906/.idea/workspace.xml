@@ -2,25 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="bac84d70-7a52-4d2a-8291-268a66109b35" name="变更" comment="">
-      <change beforePath="$PROJECT_DIR$/out/production/图书管理系统/Book/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/图书管理系统/Book/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/图书管理系统/Book/book.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/图书管理系统/Book/book.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/图书管理系统/Book/bookList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/图书管理系统/Book/bookList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/图书管理系统/Operate/addOperation.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/图书管理系统/Operate/addOperation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/图书管理系统/Operate/seekOperation.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/图书管理系统/Operate/seekOperation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/图书管理系统/User/ordinaryUsers.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/图书管理系统/User/ordinaryUsers.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Book/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Book/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Book/book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Book/book.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Book/bookList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Book/bookList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Operate/addOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Operate/addOperation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/图书管理系统/Operate/borrowingOperation.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/图书管理系统/Operate/borrowingOperation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/图书管理系统/Operate/deleteOperation.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/图书管理系统/Operate/deleteOperation.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Operate/borrowingOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Operate/borrowingOperation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Operate/deleteOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Operate/deleteOperation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Operate/displayOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Operate/displayOperation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Operate/exitOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Operate/exitOperation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Operate/returnOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Operate/returnOperation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Operate/seekOperation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Operate/seekOperation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/User/librarian.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/User/librarian.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/User/ordinaryUsers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/User/ordinaryUsers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/User/user.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/User/user.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
