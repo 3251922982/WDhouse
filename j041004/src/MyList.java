@@ -26,6 +26,10 @@ public class MyList {
 
         public  void  show(){
             ListNode cur=this.head;
+            if(cur==null) {
+                System.out.println("空");
+                return;
+            }
             while(cur!=null){
                 System.out.print(cur.val+" ");
                 cur=cur.next;
@@ -36,6 +40,7 @@ public class MyList {
         public int size(){
             int size=0;
             ListNode cur=this.head;
+            if(cur==null) return  0;
             while(cur!=null){
                 size++;
                 cur=cur.next;
@@ -92,6 +97,9 @@ public class MyList {
     public ListNode findIndex(int index){
         ListNode cur=this.head;
         int count=0;
+        if(index==0){
+            throw new RuntimeException();
+        }
         while(count!=index-1){
             cur=cur.next;
             count++;
@@ -99,8 +107,12 @@ public class MyList {
         return cur;
     }
 
-    public void  remove(int index){
-        if(index<0||index>=size()){
+    public void  indexRemove(int index){
+        ListNode cur=head;
+            if(cur.next==null){
+                return;
+            }
+        else if(index<0||index>=size()){
             throw  new indexOutOfException("链表下标越界");
         }
         else if (index==0) {
@@ -117,5 +129,137 @@ public class MyList {
         }
     }
 
+    //删除指定val节点
+    public  void  keyRemove(int key){
+    if(head==null) return;
+
+    ListNode cur=head.next;
+    ListNode prev=head;
+    while (cur!=null){
+        if(cur.val==key){
+            prev.next=cur.next;
+            cur=cur.next;
+            return;
+        }
+        else {
+            prev=prev.next;
+            cur= cur.next;
+        }
+    }
+    if(head.val==key){
+        head=head.next;
+    }
+}
+
+    //删除指定所有节点
+    public  void  removeAllKey(int key){
+        if(head==null) return;
+        ListNode cur=head.next;
+        ListNode prev=head;
+        while (cur!=null){
+            if(cur.val==key){
+              prev.next=cur.next;
+              cur=cur.next;
+         }
+          else {
+              prev=prev.next;
+              cur= cur.next;
+         }
+     }
+        if(head.val==key){
+        head=head.next;
+        }
+
+}
+
+
+    public  void  clear(){
+    ListNode cur=head.next;
+    //ListNode nextNode=cur.next;
+    if(cur==null) return;
+    while (cur!=null) {
+        ListNode nextNode=cur.next;
+        cur.next=null;
+        cur=nextNode;
+    }
+    head=null;
+}
+
+//反转链表
+    public  ListNode  reverseList(){
+        if(head==null||head.next==null){
+            return head;
+        }
+        ListNode cur=head.next;
+        head.next=null;
+        while (cur!=null){
+            ListNode curN=cur.next;
+            cur.next=head;
+            head=cur;
+            cur=curN;
+
+        }
+        return  head;
+}
+
+//任意节点开始打印val
+public  void  showNode(ListNode node){
+        while (node!=null){
+            System.out.print(node.val+" ");
+            node=node.next;
+        }
+        System.out.println();
+}
+
+public  ListNode findMiddleNode(){
+       //ListNode cur=head;
+       ListNode fast=head;
+       ListNode slow=head;
+//       int length=size()/2+1;
+//       for(int i=1;i<length;i++){
+//           cur=cur.next;
+//       }
+
+        while (fast!=null&&fast.next!=null){
+            fast=fast.next.next;
+            slow=slow.next;
+        }
+       return  slow;
+}
+
+    public ListNode deleteMiddle() {
+        ListNode frontNode=head;
+        ListNode fast=head;
+        ListNode slow=head;
+        while(fast!=null&&fast.next!=null){
+            fast=fast.next.next;
+            frontNode=slow;
+            slow=slow.next;
+        }
+        frontNode.next=slow.next;
+        return head;
+    }
+
+
+    public  ListNode findToLastNode(int k){
+            if(k<=0||k>size()) return null;
+            ListNode fast=head;
+            ListNode slow=head;
+//            int count=0;
+//            while (count!=k-1){
+//                fast=fast.next;
+//                count++;
+//                if(fast==null) return null;
+//            }
+            for(int i=1;i<k;i++){
+                fast=fast.next;
+                if(fast==null) return null;
+            }
+            while (fast.next!=null){
+                fast=fast.next;
+                slow=slow.next;
+            }
+            return  slow;
+    }
 
 }
