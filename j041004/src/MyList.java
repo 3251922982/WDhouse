@@ -11,6 +11,7 @@ public class MyList {
     }
 
     public ListNode head;
+    public  ListNode headB;
 
 
     public void list() {
@@ -18,12 +19,25 @@ public class MyList {
         ListNode listNode2 = new ListNode(3);
         ListNode listNode3 = new ListNode(5);
         ListNode listNode4 = new ListNode(6);
+        ListNode listNode5 = new ListNode(8);
+        ListNode listNode6= new ListNode(9);
 
+
+        ListNode listNodeA = new ListNode(2);
+        ListNode listNodeB = new ListNode(6);
+        ListNode listNodeC= new ListNode(10);
         listNode1.next = listNode2;
         listNode2.next = listNode3;
         listNode3.next = listNode4;
-        listNode4.next = null;
+        listNode4.next=listNode5;
+        listNode5.next=listNode6;
+        listNode6.next = listNode2;
+
+        listNodeA.next=listNodeB;
+        listNodeB.next=listNodeC;
+        listNodeC.next=listNode5;
         this.head = listNode1;
+        this.headB=listNodeA;
     }
 
     public void show() {
@@ -49,6 +63,17 @@ public class MyList {
         }
         return size;
     }
+    public int size2() {
+        int size = 0;
+        ListNode cur = this.headB;
+        if (cur == null) return 0;
+        while (cur != null) {
+            size++;
+            cur = cur.next;
+        }
+        return size;
+    }
+
 
     public boolean contains(int sum) {
         boolean det = false;
@@ -258,6 +283,7 @@ public class MyList {
         return slow;
     }
 
+    //合并链表
     public ListNode mergeTwoLists(ListNode hb) {
         ListNode ha = this.head;
         ListNode headNew = new ListNode(555);
@@ -347,5 +373,70 @@ public class MyList {
         }
         return  true;
     }
+
+    public ListNode getIntersectionNode(){
+        int size1=size();
+        int size2=size2();
+        int sizeMin=size1<=size2?size1:size2;
+        int sizeMax=size1<=size2?size2:size1;
+        ListNode cur1=size1<=size2?headB:head;
+        ListNode cur2=size1<=size2?head:headB;
+
+        while ((sizeMax-sizeMin)>0){
+            cur1=cur1.next;
+            sizeMax--;
+        }
+        showNode(cur1);
+        showNode(cur2);
+        while (cur2.next!=null){
+            if(cur1==cur2){
+                break;
+            }
+            cur1=cur1.next;
+            cur2=cur2.next;
+        }
+        if(cur2.next!=null){
+            return cur1;
+        }
+        else {
+            return null;
+        }
+
+    }
+
+    public boolean judgeRing(){
+        ListNode cur1=head;
+        ListNode cur2=head;
+        if(head==null) return  false;
+        while (cur1.next!=null&&cur1!=null){
+            cur1=cur1.next.next;
+            cur2=cur2.next;
+            if(cur1==cur2) return true;
+        }
+        return  false;
+    }
+
+    public ListNode findRingBegin(){
+
+        ListNode cur1=head;
+        ListNode cur2=head;
+        if(head==null) return  null;
+        while (cur1.next!=null&&cur1!=null){
+            cur1=cur1.next.next;
+            cur2=cur2.next;
+            if(cur1==cur2) {
+                ListNode cur=head;
+                ListNode meet=cur1;
+                while (cur!=meet){
+                    cur=cur.next;
+                    meet=meet.next;
+                }
+                return cur;
+            }
+        }
+        return  null;
+    }
+
+
 
 }

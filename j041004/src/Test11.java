@@ -5,14 +5,16 @@ public class Test11 {
         MyList myList=new MyList();
         MyList myList1=new MyList();
         myList.list();
+//        myList.addLast(8);
+//        myList.addLast(9);
         myList1.list();
         myList1.clear();
-        myList1.addFirst(10);
-        myList1.addFirst(11);
+        myList1.addFirst(9);
+        myList1.addFirst(91);
+        myList1.addFirst(81);
         myList1.addFirst(8);
-        myList1.addFirst(8);
-        myList1.addFirst(11);
-        myList1.addFirst(10);
+        myList1.addFirst(4);
+        myList1.addFirst(2);
 
 //        myList1.showNode(myList1.head);
 //        myList1.showNode(myList.head);
@@ -49,13 +51,18 @@ public class Test11 {
 //        myList.showNode(myList.findMiddleNode());
 //        myList.showNode(myList.findToLastNode(6));
 //        myList.showNode(myList.deleteMiddle());
-        //myList.showNode(myList.mergeTwoLists(myList1.head));
+//        myList.showNode(myList.mergeTwoLists(myList1.head));
 
 //        myList.clear();
         //myList1.deleteMiddle();
-        System.out.println(myList1.chkPalindrome());
+        //System.out.println(myList1.chkPalindrome());
             //myList1.show();
         //myList1.showNode(myList1.partition(90));
+//        myList.showNode(myList.head);
+//        myList.showNode(myList.headB);
+//        myList.showNode(myList.getIntersectionNode());
+        //System.out.println(myList.judgeRing());
+        System.out.println(myList.findRingBegin().val);
     }
 
 }

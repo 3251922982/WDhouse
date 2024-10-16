@@ -6,6 +6,26 @@ import static java.lang.Math.floorDiv;
 import static java.lang.Math.sqrt;
 
 class Test{
+//    public static void main(String[] args) {
+//            Scanner reader=new Scanner(System.in);
+//            while (reader.hasNext())
+//            {
+//                double a,b,c;
+//                a= reader.nextDouble();
+//                b= reader.nextDouble();
+//                c= reader.nextDouble();
+//                if(a+b>c&&a>0&&b>0&&c>0)
+//                {
+//                    double p=(a+b+c)/2.0;
+//                    double s=Math.sqrt(p*(p-a)*(p-b)*(p-c));
+//                    System.out.printf("%.2f\n",s);
+//                }
+//                else
+//                    System.out.printf("Input Error!\n");
+//
+//            }
+//            reader.close();
+//    }
     public static void main6(String[] args) {
         Scanner scanner=new Scanner(System.in);
         int a=scanner.nextInt();
@@ -36,30 +56,31 @@ class Test{
 
     public static void main(String[] args) {
 
-        Scanner scanner=new Scanner(System.in);
-        double a,b,c;
-        while(scanner.hasNext()){
+        Scanner scanner = new Scanner(System.in);
+        double a = 0, b = 0, c = 0;
+        while (scanner.hasNext()) {
 
-             a=scanner.nextDouble();
-             b=scanner.nextDouble();
-             c=scanner.nextDouble();
-            boolean det=(a<=0||b<=0||c<=0)?false:true;
-            if((a+b)<=c) det=false;
-            else if((a+c)<=b) det=false;
-            else if((b+c)<=a) det=false;
+            a = scanner.nextDouble();
+            b = scanner.nextDouble();
+            c = scanner.nextDouble();
+            //scanner.nextLine();
+        boolean det = (a <= 0 || b <= 0 || c <= 0) ? false : true;
+        if ((a + b) <= c) det = false;
+        else if ((a + c) <= b) det = false;
+        else if ((b + c) <= a) det = false;
 
 
-            if(det==true){
-                double p=(a+b+c)/2;
-                double s=p*(p-a)*(p-b)*(p-c);
-                System.out.printf("%.2f\n",sqrt(s));
-            }
-            else{
-                //System.out.println();
-                System.out.printf("Input Error!\n");
-            }
+        if (det == true) {
+            double p = (a + b + c) / 2;
+            double s = p * (p - a) * (p - b) * (p - c);
+            System.out.printf("%.2f\n", sqrt(s));
+        } else {
+            //System.out.println();
+            System.out.printf("Input Error!\n");
         }
     }
+    }
+
     public static void main1(String[] args){
         Scanner scanner=new Scanner(System.in);
         byte byte1=scanner.nextByte();

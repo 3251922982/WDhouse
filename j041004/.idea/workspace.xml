@@ -2,18 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="19b39c1b-9766-4f8c-be7a-bb11efc5a7d5" name="变更" comment="">
-      <change afterPath="$PROJECT_DIR$/../j040922/j040922.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/package1/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../j041009/j041009.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../j041009/src/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../jhtml1/jhtml1.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../untitled/src/Test.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/j041004/MyList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/j041004/MyList.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/j041004/Test11.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/j041004/Test11.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MyList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Test11.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test11.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/package1/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/package1/Test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +40,7 @@
     &quot;last_opened_file_path&quot;: &quot;D:/王东/新建文件夹jdk1.8&quot;
   }
 }</component>
-  <component name="RunManager" selected="应用程序.Test11">
+  <component name="RunManager" selected="应用程序.Test">
     <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="package1.Test" />
       <module name="j041004" />
@@ -69,8 +63,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="应用程序.Test11" />
         <item itemvalue="应用程序.Test" />
+        <item itemvalue="应用程序.Test11" />
       </list>
     </recent_temporary>
   </component>
