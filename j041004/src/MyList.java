@@ -53,6 +53,7 @@ public class MyList {
         System.out.println();
     }
 
+    //
     public int size() {
         int size = 0;
         ListNode cur = this.head;
@@ -75,6 +76,7 @@ public class MyList {
     }
 
 
+    //找元素
     public boolean contains(int sum) {
         boolean det = false;
         ListNode cur = this.head;
@@ -88,12 +90,15 @@ public class MyList {
         return det;
     }
 
+    //头插
     public void addFirst(int sum) {
         ListNode node = new ListNode(sum);
         node.next = head;
         head = node;
     }
 
+
+    //尾插
     public void addLast(int sum) {
         ListNode node = new ListNode(sum);
         ListNode cur = this.head;
@@ -103,6 +108,7 @@ public class MyList {
         cur.next = node;
     }
 
+    //指定下标添加元素
     public void addIndex(int index, int sum) {
         if (index < 0 || index > size()) {
             throw new indexOutOfException("链表下标越界");
@@ -118,6 +124,8 @@ public class MyList {
         }
     }
 
+
+    //查找下标元素
     public ListNode findIndex(int index) {
         ListNode cur = this.head;
         int count = 0;
@@ -131,6 +139,7 @@ public class MyList {
         return cur;
     }
 
+    //删除指定下标节点
     public void indexRemove(int index) {
         ListNode cur = head;
         if (cur.next == null) {
@@ -191,6 +200,7 @@ public class MyList {
     }
 
 
+    //清空链表
     public void clear() {
         ListNode cur = head.next;
         //ListNode nextNode=cur.next;
@@ -215,7 +225,6 @@ public class MyList {
             cur.next = head;
             head = cur;
             cur = curN;
-
         }
         return head;
     }
@@ -232,6 +241,7 @@ public class MyList {
         System.out.println();
     }
 
+    //找到中间节点
     public ListNode findMiddleNode() {
         //ListNode cur=head;
         ListNode fast = head;
@@ -248,6 +258,8 @@ public class MyList {
         return slow;
     }
 
+
+    //删除中间节点
     public ListNode deleteMiddle() {
         ListNode frontNode = head;
         ListNode fast = head;
@@ -261,7 +273,7 @@ public class MyList {
         return head;
     }
 
-
+//找到倒数第k个节点
     public ListNode findToLastNode(int k) {
         if (k <= 0 || k > size()) return null;
         ListNode fast = head;
@@ -308,7 +320,7 @@ public class MyList {
         return headNew.next;
     }
 
-
+//指定一个元素，大小元素分居两侧
     public ListNode partition(int x) {
         ListNode cur = head;
         ListNode bs = null;
@@ -347,6 +359,7 @@ public class MyList {
     }
 
 
+    //判断回文链表
     public  boolean chkPalindrome(){
         ListNode fast=head;
         ListNode slow=head;
@@ -361,7 +374,6 @@ public class MyList {
             slow=cur;
             cur=curN;
         }
-
         while (head!=slow){
             if(head.val!=slow.val){
                 return  false;
@@ -369,11 +381,12 @@ public class MyList {
             if(head.next==slow) return  true;
             head=head.next;
             slow=slow.next;
-
         }
         return  true;
     }
 
+
+    //找到共同节点
     public ListNode getIntersectionNode(){
         int size1=size();
         int size2=size2();
@@ -404,6 +417,7 @@ public class MyList {
 
     }
 
+    //判断循环链表
     public boolean judgeRing(){
         ListNode cur1=head;
         ListNode cur2=head;
@@ -415,7 +429,7 @@ public class MyList {
         }
         return  false;
     }
-
+//找到循环开始节点
     public ListNode findRingBegin(){
 
         ListNode cur1=head;
