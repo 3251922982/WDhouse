@@ -2,15 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="19b39c1b-9766-4f8c-be7a-bb11efc5a7d5" name="变更" comment="">
-      <change afterPath="$PROJECT_DIR$/../j041018/src/MyLinkedList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../j041018/src/MyStack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../j041018/src/Test1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../j041018/src/Test2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../j041018/src/Test3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../j041018/src/exception.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/j041004/MyList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/j041004/MyList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/j041004/Test11.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/j041004/Test11.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MyList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MyList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Test11.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Test11.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

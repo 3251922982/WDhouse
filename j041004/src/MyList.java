@@ -14,7 +14,7 @@ public class MyList {
     public  ListNode headB;
 
 
-    public void list() {
+    public void initList() {
         ListNode listNode1 = new ListNode(1);
         ListNode listNode2 = new ListNode(3);
         ListNode listNode3 = new ListNode(5);
@@ -31,7 +31,7 @@ public class MyList {
         listNode3.next = listNode4;
         listNode4.next=listNode5;
         listNode5.next=listNode6;
-        listNode6.next = listNode2;
+        listNode6.next = null;
 
         listNodeA.next=listNodeB;
         listNodeB.next=listNodeC;
@@ -278,12 +278,6 @@ public class MyList {
         if (k <= 0 || k > size()) return null;
         ListNode fast = head;
         ListNode slow = head;
-//            int count=0;
-//            while (count!=k-1){
-//                fast=fast.next;
-//                count++;
-//                if(fast==null) return null;
-//            }
         for (int i = 1; i < k; i++) {
             fast = fast.next;
             if (fast == null) return null;
@@ -331,7 +325,7 @@ public class MyList {
             return null;
         }
         while (cur != null) {
-            if (cur.val < x) {
+            if (cur.val <= x) {
                 if (bs == null) {
                     bs = cur;
                     be=cur;
@@ -345,8 +339,8 @@ public class MyList {
                     ae=cur;
                 }
                 else {
-                    be.next = cur;
-                    be = cur;
+                    ae.next = cur;
+                    ae = cur;
                 }
             }
             cur=cur.next;
@@ -394,7 +388,6 @@ public class MyList {
         int sizeMax=size1<=size2?size2:size1;
         ListNode cur1=size1<=size2?headB:head;
         ListNode cur2=size1<=size2?head:headB;
-
         while ((sizeMax-sizeMin)>0){
             cur1=cur1.next;
             sizeMax--;
@@ -414,7 +407,6 @@ public class MyList {
         else {
             return null;
         }
-
     }
 
     //判断循环链表
@@ -431,7 +423,6 @@ public class MyList {
     }
 //找到循环开始节点
     public ListNode findRingBegin(){
-
         ListNode cur1=head;
         ListNode cur2=head;
         if(head==null) return  null;

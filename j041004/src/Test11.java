@@ -4,10 +4,10 @@ public class Test11 {
     public static void main(String[] args) {
         MyList myList=new MyList();
         MyList myList1=new MyList();
-        myList.list();
+        myList.initList();
 //        myList.addLast(8);
 //        myList.addLast(9);
-        myList1.list();
+        myList1.initList();
         myList1.clear();
         myList1.addFirst(9);
         myList1.addFirst(91);
@@ -44,9 +44,10 @@ public class Test11 {
 //        //myList.clear();
 //        myList.addIndex(0,111);
 ////        System.out.println(myList.head.val);
-////        myList.addIndex(1,222);
+            myList.addIndex(1,222);
 ////        myList.addIndex(2,333);
-//        myList.show();
+        myList.partition(5);
+        myList.show();
 //        System.out.println(myList.size());
 //        myList.showNode(myList.findMiddleNode());
 //        myList.showNode(myList.findToLastNode(6));
@@ -62,7 +63,7 @@ public class Test11 {
 //        myList.showNode(myList.headB);
 //        myList.showNode(myList.getIntersectionNode());
         //System.out.println(myList.judgeRing());
-        System.out.println(myList.findRingBegin().val);
+//        System.out.println(myList.findRingBegin().val);
     }
 
 }
