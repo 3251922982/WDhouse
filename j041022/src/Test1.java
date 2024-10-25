@@ -1,8 +1,9 @@
 import java.util.Arrays;
 
 public class Test1 {
+
     public static void main(String[] args) {
-        int[] arr={0,0,0,2,4,4,0};
+        int[] arr={0,0,0,0,0,0,0};
         int dest=-1;
         int cur=0;
 
