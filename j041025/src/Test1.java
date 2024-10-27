@@ -1,5 +1,5 @@
 import java.util.Arrays;
-public class Test1 {
+ public class Test1 {
     public static void main(String[] args) {
         int[] arr={0,2,0,5};
         int dest=-1;
