@@ -12,7 +12,7 @@ public class Test2 {
 
     public static void main(String[] args) {
         test test1=new test();
-       test1.func(2.0,2.0);
+       test1.func(2,2);
     }
     public static void main2(String[] args) {
         Scanner scanner=new Scanner(System.in);
