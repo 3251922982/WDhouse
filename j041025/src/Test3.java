@@ -29,18 +29,128 @@ public class Test3 {
  }
 
     public static void main(String[] args) {
+        Scanner scanner=new Scanner(System.in);
+        int n= scanner.nextInt();
+        int m=scanner.nextInt();
+        int[][] ints=new int[n][m];
+        for(int i=0;i<n;i++){
+            for(int j=0;j<m;j++){
+                ints[i][j] = scanner.nextInt();
+            }
+        }
+
+        for(int i=0;i<n;i++){
+            int max=ints[i][0];
+            int y=-1;
+            for(int j=0;j<m;j++){
+                if(ints[i][j]>=max) {
+                    max=ints[i][j];
+                    y=j;
+                }
+            }
+            int det=1;
+            for(int k=i;k<n;k++){
+                if(ints[k][y]<max) {
+                    det=0;
+                    break;
+                }
+            }
+            for(int k=i;k>=0;k--){
+                if(ints[k][y]<max) {
+                    det=0;
+                    break;
+                }
+            }
+            if(det==1){
+                System.out.println(i+" "+y);
+                break;
+            }
+            if(i==n-1){
+                System.out.println(0);
+            }
+        }
+    }
+
+    public static void main11(String[] args) {
+        Scanner scanner=new Scanner(System.in);
+        int n= scanner.nextInt();
+        int[][] ints=new int[n][n];
+        for(int i=0;i<n;i++){
+            for(int j=0;j<n;j++){
+                ints[j][i] = scanner.nextInt();
+            }
+        }
+        for(int i=0;i<n;i++){
+            for(int j=0;j<n;j++){
+                if(j!=n-1)
+                System.out.print(ints[i][j]+" ");
+                else System.out.print(ints[i][j]);
+            }
+            if(i!=n-1)
+            System.out.println();
+        }
+    }
+
+    public static void main8(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        ArrayList<Integer> arrayList=new ArrayList<>();
+        for (int i = 0; i < n; i++) {
+            int a = sc.nextInt();
+            arrayList.add(a);
+        }
+        int m=sc.nextInt();
+        arrayList.add(m);
+        int[] ints= new int[arrayList.size()];
+        for(int i=0;i<arrayList.size();i++){
+            ints[i]=arrayList.get(i);
+        }
+        Arrays.sort(ints);
+        for(int i=0;i<arrayList.size();i++){
+            if(i!=arrayList.size()-1)
+            System.out.print(ints[i]+" ");
+            else System.out.print(ints[i]);
+        }
+    }
+    public static void main10(String[] args) {
+            Scanner sc=new Scanner(System.in);
+            int n=sc.nextInt();
+            int m=sc.nextInt();
+            int count=0;
+            int s=0;
+            int j=1;
+            int i=0;
+            int [] b=new int [n];
+            while(s<n){
+                if(b[i]==0) count++;
+                if (count == m) {
+                    s++;
+                    count = 0;
+                    b[i]=j++;
+                }
+                if (i == n - 1) i = -1;
+                i++;
+            }
+            for(i=0;i<n;i++)
+                if(i==0)
+                    System.out.printf("%d",b[i]);
+                else
+                    System.out.printf(",%d",b[i]);
+    }
+
+    public static void main9(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         int m=sc.nextInt();
+        int[] ints=new int[n];
         MyLinked myLinked=new MyLinked(1);
         MyLinked head=myLinked;
         MyLinked cur=myLinked;
-
             for(int i=1;i<=n;i++){
                 if(i==1){
                     myLinked.var=i;
-                    myLinked.next=null;
-                    myLinked.prev=null;
+                    myLinked.next=myLinked;
+                    myLinked.prev=myLinked;
                 } else if (i!=1) {
                     cur.next=new MyLinked(i);
                     cur.next.prev=cur;
@@ -51,20 +161,30 @@ public class Test3 {
                     }
                 }
             }
-            cur=head;
+            MyLinked myLinked1=new MyLinked(666);
+            myLinked1.next=head;
+            cur=myLinked1;
+
             int sum=0;
-            while (cur.prev.var!=cur.next.var){
-                cur=cur.next;
+            int det=0;
+            while (det<n){
                 sum++;
-                if(sum%m==0){
-                    System.out.println(cur.var);
+                cur=cur.next;
+                if(sum==m){
+                    ints[cur.var-1]=det+1;
                     cur.prev.next=cur.next;
-                    cur=cur.next;
+                    cur.next.prev=cur.prev;
+                    det++;
+                    sum=0;
                 }
             }
-
+        for (int i = 0; i < ints.length; i++) {
+            if(i!=ints.length-1)
+            System.out.print(ints[i] + ",");
+            else System.out.print(ints[i]);
+        }
     }
-
+//6,4,1,3,5,2
     public static void main5(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
